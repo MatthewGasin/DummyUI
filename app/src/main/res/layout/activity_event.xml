@@ -58,7 +58,8 @@
         android:text="choice two"
         android:id="@+id/choice2"
         android:layout_alignTop="@+id/Echar2"
-        android:layout_alignStart="@+id/choice1" />
+        android:layout_alignStart="@+id/choice1"
+        android:onClick="onNext" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -68,7 +69,8 @@
         android:id="@+id/choice1"
         android:layout_above="@+id/choice2"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="30dp"
+        android:onClick="onNext" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -77,7 +79,8 @@
         android:text="choice three"
         android:id="@+id/choice3"
         android:layout_above="@+id/choiceBox"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onNext" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
