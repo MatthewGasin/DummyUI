@@ -1,10 +1,100 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
     android:screenOrientation="landscape"
-    tools:context="com.example.android.dummyui.EventActivity">
+    tools:context="com.example.android.dummyui.EventActivity"
+    android:id="@+id/eventLayout">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="260dp"
+        android:id="@+id/Echar4"
+        android:layout_alignTop="@+id/Echar1"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="260dp"
+        android:id="@+id/Echar1"
+        android:layout_marginStart="33dp"
+        android:layout_alignTop="@+id/choice2"
+        android:layout_toEndOf="@+id/Echar4" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="260dp"
+        android:id="@+id/Echar3"
+        android:layout_alignTop="@+id/Echar1"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="260dp"
+        android:id="@+id/Echar2"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/Echar3" />
+
+    <TextView
+        android:layout_width="550dp"
+        android:layout_height="100dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+        android:text=""
+        android:id="@+id/choiceBox"
+        android:background="@drawable/dialogue"
+        android:onClick="onNext"
+        android:clickable="true"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choice two"
+        android:id="@+id/choice2"
+        android:layout_alignTop="@+id/Echar2"
+        android:layout_alignStart="@+id/choice1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choice one"
+        android:id="@+id/choice1"
+        android:layout_above="@+id/choice2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="choice three"
+        android:id="@+id/choice3"
+        android:layout_above="@+id/choiceBox"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/EMenu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/ETime"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/Echar2" />
 
 </RelativeLayout>

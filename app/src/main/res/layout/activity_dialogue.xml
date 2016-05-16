@@ -1,9 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="0dp"
-    android:paddingRight="0dp"
-    android:paddingTop="0dp"
-    android:paddingBottom="0dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:screenOrientation="landscape"
     tools:context="com.example.android.dummyui.DialogueActivity"
     android:id="@+id/dialogueLayout">
@@ -12,79 +10,60 @@
         android:layout_width="550dp"
         android:layout_height="100dp"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-        android:text=""
-        android:id="@+id/choiceBox"
+        android:id="@+id/dialogueBox"
         android:background="@drawable/dialogue"
-        android:onClick="onNext"
+        android:onClick="onClick"
         android:clickable="true"
-        android:layout_marginBottom="25dp"
+        android:text="             words"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="choice two"
-        android:id="@+id/choice2"
-        android:layout_alignTop="@+id/Echar2"
-        android:layout_alignStart="@+id/choice1" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="choice one"
-        android:id="@+id/choice1"
-        android:layout_above="@+id/choice2"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp" />
+        android:layout_marginBottom="20dp" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="choice three"
-        android:id="@+id/choice3"
-        android:layout_above="@+id/choiceBox"
-        android:layout_centerHorizontal="true" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/nameBox"
+        android:layout_above="@+id/dialogueBox"
+        android:layout_alignStart="@+id/dialogueBox" />
 
     <ImageView
         android:layout_width="120dp"
         android:layout_height="260dp"
-        android:id="@+id/Echar4"
-        android:layout_alignTop="@+id/Echar1"
+        android:id="@+id/Dchar4"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="120dp"
         android:layout_height="260dp"
-        android:id="@+id/Echar1"
-        android:layout_marginStart="33dp"
-        android:layout_alignTop="@+id/choice2"
-        android:layout_toEndOf="@+id/Echar4" />
+        android:id="@+id/Dchar1"
+        android:layout_marginStart="35dp"
+        android:layout_alignTop="@+id/Dchar4"
+        android:layout_toEndOf="@+id/Dchar4" />
 
     <ImageView
         android:layout_width="120dp"
         android:layout_height="260dp"
-        android:id="@+id/Echar3"
-        android:layout_alignTop="@+id/Echar1"
+        android:id="@+id/Dchar3"
+        android:layout_alignTop="@+id/Dchar1"
         android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="120dp"
         android:layout_height="260dp"
-        android:id="@+id/Echar2"
-        android:layout_marginEnd="30dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/Echar3" />
+        android:id="@+id/imageView"
+        android:layout_marginEnd="35dp"
+        android:layout_alignTop="@+id/Dchar3"
+        android:layout_toStartOf="@+id/Dchar3" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Menu"
-        android:id="@+id/EMenu"
+        android:id="@+id/DMenu"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
 
@@ -93,8 +72,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Time"
-        android:id="@+id/ETime"
-        android:layout_above="@+id/choice1"
-        android:layout_toStartOf="@+id/EMenu" />
+        android:id="@+id/DTime"
+        android:layout_alignBottom="@+id/DMenu"
+        android:layout_toStartOf="@+id/DMenu" />
 
 </RelativeLayout>

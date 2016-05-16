@@ -45,13 +45,22 @@ public class MainActivity extends AppCompatActivity {
         choices.add("is this the real life?");
         choices.add("idk man");
 
+        ArrayList<String> characters = new ArrayList<String>();
+        characters.add("Holden");
+        characters.add("Avatar");
+        characters.add("Icon");
+
+        int background = R.drawable.desktop;
+
+        String choiceText = "what a choice to choose";
 
 
 
-
-        Intent intent = new Intent(this, DialogueActivity.class);
+        Intent intent = new Intent(this, EventActivity.class);
         intent.putExtra("choices", choices);
-
+        intent.putExtra("characters", characters);
+        intent.putExtra("background", background);
+        intent.putExtra("choiceText", choiceText);
 
         startActivity(intent);
     }
