@@ -15,4 +15,15 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:onClick="onSave" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="100dp"
+        android:text="TextView" />
+
 </RelativeLayout>
